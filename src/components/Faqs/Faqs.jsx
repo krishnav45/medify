@@ -1,0 +1,42 @@
+import React from "react";
+import "./Faqs.css";
+import doctor from "../../assets/doc.png"
+import plus from "../../assets/+.png"
+import likes from "../../assets/likes.png"
+import love from "../../assets/love.png"
+
+
+const Faqs = () => {
+  return (
+    <div className="QuestionSection">
+      <div className="getyourans">Get Your Answer</div>
+      <div className="frequent">Frequently Asked Questions</div>
+      <div className="imgque">
+        <img className="doctor" src={doctor} alt="" srcset="" />
+        <img className="likes" src={likes} alt="" srcset="" />
+        <img className='love' src={love} alt="" srcset="" />
+        
+        <div className="que">
+            <div>
+            <p>Why choose our medical for your family?</p>
+            <img src={plus} alt="" srcset="" />
+            </div>
+            <div>
+            <p>Why we are different from others?</p>
+            <img src={plus} alt="" srcset="" />
+            </div>
+            <div>
+            <p>Trusted & experience senior care & love</p>
+            <img src={plus} alt="" srcset="" />
+            </div>
+            <div>
+            <p>How to get appointment for emergency cases?</p>
+            <img src={plus} alt="" srcset="" />
+            </div>            
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Faqs;
